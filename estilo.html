@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collar con Frases - CauchoStyle</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    <body onload="cargadepromocion()">
+
+
+    <div class="encabezado">
+        <h1>llaveros personalizados</h1>
+        <p>Frases que llevas siempre contigo</p>
+    </div>
+
+  
+    <div class="menu">
+ <p><a href="..//manillas cauchostyle1/ESTILO.HTML">Inicio</a> |<a href="../manillas cauchostyle2/ESTILO.HTML"> Producto1</a>  | <a href="..//manillas cauchostyle3/ESTILO.HTML">Producto2</a>  |<a href="../manilla cauchostyle4/estilo.html">producto3 </a>|<a href="..//productospormayor/estilo.html">Productos por mayor</a>   </p>
+    </div>
+
+
+
+
+   
+
+    <div class="fila-principal">
+
+      
+        <div class="caja-imagen-sombra">
+            <img src="../imagen/llavero 1.jpeg" alt="llavero unico">
+        </div>
+
+        
+        <div class="caja-info-redonda"onmouseover="mostar1()" onmouseout="dejardemostar1()">
+            <h2>llaveros personalizados</h2>
+           <p id="respuesta1"></p>
+            <button class="btn-compra">Comprar ahora</button>
+        </div>
+
+           <div class="boton-compra">
+        <select  id="cantidades" onchange="mostrarprecio()">
+            <option value="">selecione una opcion</option>
+            <option value="10.000">1</option>
+            <option value="15.000">2</option>
+            <option value="20.000">3</option>
+            <option value="25.000">4</option>
+            <option value="no puedes llevar mas de 4">5</option>
+        </select>
+        <p id="costo"></p>
+    </div>
+
+    </div>
+
+    
+    <div class="cuatro-cajas">
+
+        
+        <div class="cuatro-cajas">
+
+        
+        <div class="caja-efecto sombra anim-suave">
+            <img src="../imagen/llavero 1.jpeg" alt="" id="pequeña">
+        </div>
+
+        
+        <div class="caja-efecto sombra anim-suave">
+            
+            <img src="../imagen/llavero3.jpeg" alt="" id="pequeña">
+        </div>
+
+       
+        <div class="caja-efecto anim-palpito">
+        
+            <img src="../imagen/llavero3.jpeg" alt="" id="pequeña">
+        </div>
+
+      
+        <div class="caja-efecto anim-cargando">
+       <img src="../imagen/llavero2.jpeg" alt=""id="pequeña">
+      <div class="loader"></div>
+        </div>
+
+    </div>
+    </div>
+
+  <div class="pie" onclick="saludar()">
+        <p>© 2026 CauchoStyle - Collares con frases</p>
+    </div>
+
+
+<script>
+    function saludar(){
+        alert(" este producto es del instituto diversificado alber eisten");
+    }
+</script>
+
+<script>
+    function cargadepromocion(){
+
+        alert("bienvenidos  a nuestra pagina;por su primer compra tienes un descuento del 10%" )
+    }
+
+</script>
+
+<script>function mostar1(){
+        document.getElementById("respuesta1").innerHTML = "  Cordón trenzado color champán con dije de made Un detalle elegante y espiritual para tus llaves, ideal para uso diario o como regalo"
+    }
+</script>
+<script>
+    function mostrarprecio(){
+        let valor = document.getElementById("cantidades").value;
+        document.getElementById("costo").innerHTML = valor;
+    }
+</script>
+</body>
+</html>
