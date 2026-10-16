@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manillas CauchoStyle</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+   
+    <div class="caja1">
+        <h1>Manillas de caucho</h1>
+    </div>
+
+   
+    <div class="caja2">
+        <p>Creatividad Que Se Lleva Puesta</p>
+    </div>
+
+   
+    
+    <div class="menu">
+ <p><a href="..//manillas cauchostyle1/ESTILO.HTML">Inicio</a> |<a href="../manillas cauchostyle2/ESTILO.HTML"> Producto1</a>  | <a href="..//manillas cauchostyle3/ESTILO.HTML">Producto2</a>  |<a href="../manilla cauchostyle4/estilo.html">producto3 </a>|<a href="..//productospormayor/estilo.html">Productos por mayor</a>   </p>
+    </div>
+
+
+
+    <div class="bloque-dos-cajas">
+        <div class="texto1">
+            <p>
+               ✨🌈 ¡LLEVA TU NOMBRE, LLEVA TU ESTILO! 🌈✨
+
+¿Quieres una manilla única y personalizada? 
+😍 Tenemos para ti nuestras increíbles manillas de caucho personalizadas, donde puedes poner tu nombre,
+ una palabra especial, una frase corta o el nombre de alguien importante para ti. 💖
+Son perfectas para complementar tu estilo, compartir con tus amigos o regalar en una ocasión especial.
+ 🎁✨ Puedes crear una manilla que represente tu personalidad y te haga sentir diferente.
+🖤 Personaliza tu manilla como más te guste.
+✨ Un detalle único para ti o para regalar.
+🌈 Divertida, original y con mucho estilo.
+📩 ¡No esperes más y pide la tuya!
+Escríbenos para conocer más y realizar tu pedido.
+💫 CauchoStyle
+“Lleva tu nombre, lleva tu estilo”. 💫
+            </p>
+        </div>
+
+        <div class="img">
+            <img src="..//imagen/manilla.jpeg" alt="Detalle de manilla">
+        </div>
+    </div>
+
+    
+    <div class="boton-compra">
+        <select  id="cantidades" onchange="mostrarprecio()">
+            <option value="">selecione una opcion</option>
+            <option value="5.000">1</option>
+            <option value="10.000">2</option>
+            <option value="15.000">3</option>
+            <option value="20.000">4</option>
+            <option value="no puedes llevar mas de 4">5</option>
+        </select>
+        <p id="costo"></p>
+    </div>
+
+    
+    <div class="cuatro-cajas">
+
+        
+        <div class="caja-efecto sombra anim-suave">
+
+            <img src="../imagen/oracion.PNG" alt="" id="pequeña">
+        </div>
+
+        
+        <div class="caja-efecto sombra anim-suave">
+            
+            <img src="../imagen/oracion.PNG" alt="" id="pequeña">
+        </div>
+
+       
+        <div class="caja-efecto anim-palpito">
+        
+            <img src="../imagen/oracion.PNG" alt="" id="pequeña">
+        </div>
+
+      
+        <div class="caja-efecto anim-cargando">
+       <img src="../imagen/nuevo.jpeg" alt=""id="pequeña">
+      <div class="loader"></div>
+        </div>
+
+    </div>
+
+
+    <div class="pie" onclick="saludar()">
+        <p>Pie de página - Mi primera página web</p>
+    </div>
+
+<script>
+    function saludar(){
+        alert(" este producto es del instituto diversificado alber eisten");
+    }
+</script>
+
+
+<script>
+    function mostrarprecio(){
+        let valor = document.getElementById("cantidades").value;
+        document.getElementById("costo").innerHTML = valor;
+    }
+</script>
+</body>
+</html>

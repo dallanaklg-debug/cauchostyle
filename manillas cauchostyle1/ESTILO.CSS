@@ -1,0 +1,80 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.encabezado{
+    background-color: rgb(166, 211, 229);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+.menu{
+    background-color: rgb(166, 211, 229);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+.contenedor-principal{
+    margin: 20px;
+}
+
+
+.caja1{
+    background-color: white;
+    width: 30%;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+
+}
+
+.caja2{
+    background-color: white;
+    width: 30%;
+    height: 200px;
+    margin: 10px;
+    float: left;
+
+
+
+}
+
+.caja3{
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+
+}
+
+
+.caja2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+
+.pie{
+    clear: both;          
+    background-color: rgb(149, 215, 241);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
